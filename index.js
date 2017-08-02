@@ -26,7 +26,7 @@ client.on('message', (topic, message) => {
     break;
     case 'music' : 
       if(msgArr.length === 2){
-        services.music.play(msgArr[2]);
+        services.music.play(msgArr[1]);
       }
     break;
     case 'stopmusic' : 

@@ -13,7 +13,7 @@ module.exports = {
     })
   },
   stopPlay : () => {
-    let cmd = 'kill -9 mplayer';
+    let cmd = 'killall -9 mplayer';
     exec(cmd, (err, stdOut) => {
       if(err){
         console.log(err);
