@@ -17,7 +17,7 @@ client.on('connect', () => {
 })
 
 client.on('message', (topic, message) => {
-  let msgArr = message.split('|');
+  let msgArr = message.toString().split('|');
   switch(msgArr[0]){
     case 'move' : 
       if(msgArr.length === 4){
