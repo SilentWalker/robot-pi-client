@@ -24,5 +24,13 @@ client.on('message', (topic, message) => {
         services.motivation.move(msgArr[1], msgArr[2], msgArr[3]);
       }
     break;
+    case 'music' : 
+      if(msgArr.length === 2){
+        services.music.play(msgArr[2]);
+      }
+    break;
+    case 'stopmusic' : 
+      services.music.stopPlay();
+    break;
   }
 })
